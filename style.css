@@ -38,7 +38,7 @@
   a{text-decoration:none;color:inherit;}
   ul{list-style:none;}
   button{font-family:inherit;cursor:pointer;border:none;background:none;}
-  .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px;width:100%;}
   :focus-visible{outline:2px solid var(--green-700); outline-offset:3px; border-radius:4px;}
   .icon{stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
 
@@ -47,13 +47,6 @@
   .reveal-d1.in-view{transition-delay:.08s;}
   .reveal-d2.in-view{transition-delay:.16s;}
   .reveal-d3.in-view{transition-delay:.24s;}
-
-  /* ===== Top bar ===== */
-  .topbar{background:var(--green-900);color:#fff;font-size:13px;}
-  .topbar .container{display:flex;justify-content:flex-end;gap:28px;padding:9px 24px;}
-  .topbar a{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.92);opacity:.95;}
-  .topbar a:hover{opacity:1;text-decoration:underline;}
-  .topbar .icon{width:14px;height:14px;}
 
   /* ===== Navbar ===== */
   .navbar{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--border);}
@@ -90,12 +83,12 @@
   .section-head{max-width:620px;margin-bottom:44px;}
   .section-head h2{font-size:clamp(24px,3vw,32px);margin-bottom:10px;}
   .section-head p{color:var(--muted);font-size:15.5px;}
-  .section{padding:88px 0;}
+  .section{min-height:100vh;display:flex;align-items:center;padding:88px 0;}
   .bg-soft{background:var(--green-50);}
   .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);}
 
   /* ===== Hero ===== */
-  .hero{padding:64px 0 76px;background:var(--page);border-bottom:1px solid var(--border);}
+  .hero{min-height:100vh;display:flex;align-items:center;padding:80px 0 60px;background:var(--page);border-bottom:1px solid var(--border);}
   .hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:center;}
   .hero h1{font-size:clamp(30px,3.6vw,42px);line-height:1.2;margin-bottom:18px;}
   .hero p{color:var(--muted);font-size:15.5px;max-width:480px;margin-bottom:30px;}
