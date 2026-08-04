@@ -11,12 +11,12 @@ const navbar=document.getElementById('navbar');
   },{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  document.querySelectorAll('.reason-head').forEach(head=>{
-    head.addEventListener('click',()=>{
-      const item=head.closest('.reason-item');
-      const wasOpen=item.classList.contains('open');
-      document.querySelectorAll('.reason-item').forEach(i=>i.classList.remove('open'));
-      if(!wasOpen) item.classList.add('open');
+  document.querySelectorAll('.tab-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
     });
   });
 
