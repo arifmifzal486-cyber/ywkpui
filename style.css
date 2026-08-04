@@ -140,10 +140,10 @@
 
   /* ===== Visi & Misi (Tabs) ===== */
   .reason-grid{display:grid;grid-template-columns:1fr .85fr;gap:56px;align-items:start;}
-  .tabs-nav{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid var(--border);}
-  .tab-btn{padding:10px 24px;font-size:15px;font-weight:600;color:var(--muted);background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-2px;cursor:pointer;transition:all .2s ease;}
+  .tabs-nav{display:inline-flex;background:#fff;border:1px solid var(--border);border-radius:100px;padding:6px;margin-bottom:24px;box-shadow:var(--shadow-sm);}
+  .tab-btn{padding:10px 32px;font-size:15px;font-weight:600;color:var(--muted);background:none;border:none;border-radius:100px;cursor:pointer;transition:all .3s ease;}
   .tab-btn:hover{color:var(--green-700);}
-  .tab-btn.active{color:var(--green-700);border-bottom-color:var(--green-700);}
+  .tab-btn.active{color:#fff;background:var(--green-700);box-shadow:0 4px 12px rgba(14,165,107,0.25);}
   .tab-content{display:none;animation:fadeIn .3s ease;}
   .tab-content.active{display:block;}
   @keyframes fadeIn { from { opacity:0; transform:translateY(5px); } to { opacity:1; transform:translateY(0); } }
