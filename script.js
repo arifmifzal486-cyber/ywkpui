@@ -39,8 +39,7 @@ const navbar=document.getElementById('navbar');
         <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5L5 19"/></svg>
         <span>${item.cap}</span><code>${item.src}</code>
       </div>
-      <div class="gallery-overlay"><svg class="icon" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
-      <div class="gallery-caption">${item.cap}</div>`;
+      <div class="gallery-overlay"><svg class="icon" viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>`;
     div.addEventListener('click',()=>{ if(!div.classList.contains('is-empty')) openLightbox(item.src,item.cap); });
     grid.appendChild(div);
     io.observe(div);
