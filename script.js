@@ -23,14 +23,14 @@ const navbar=document.getElementById('navbar');
   });
 
   const galleryData=[
-    {src:"images/galeri-1.jpg",cap:"Gedung Yayasan"},
-    {src:"images/galeri-2.jpg",cap:"Aula"},
-    {src:"images/galeri-3.jpg",cap:"SMK Nuris"},
-    {src:"images/galeri-4.jpg",cap:"SMP Nuris"},
-    {src:"images/galeri-5.jpg",cap:"MTs Nuris"},
-    {src:"images/galeri-6.jpg",cap:"Area Parkir"},
-    {src:"images/galeri-7.jpg",cap:"Mushola"},
-    {src:"images/galeri-8.jpg",cap:"Kegiatan Siswa"}
+    {src:"images/galeri-1.webp",cap:"Gedung Yayasan"},
+    {src:"images/galeri-2.webp",cap:"Aula"},
+    {src:"images/galeri-3.webp",cap:"SMK Nuris"},
+    {src:"images/galeri-4.webp",cap:"SMP Nuris"},
+    {src:"images/galeri-5.webp",cap:"MTs Nuris"},
+    {src:"images/galeri-6.webp",cap:"Area Parkir"},
+    {src:"images/galeri-7.webp",cap:"Mushola"},
+    {src:"images/galeri-8.webp",cap:"Kegiatan Siswa"}
   ];
   const grid=document.getElementById('galleryGrid');
   galleryData.forEach((item,i)=>{
