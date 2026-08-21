@@ -95,9 +95,9 @@
 
   .kicker{color:var(--green-700);font-weight:700;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;display:block;}
   h1,h2,h3{letter-spacing:-.01em;font-weight:700;color:var(--text);}
-  .section-head{max-width:620px;margin-bottom:44px;}
+  .section-head{max-width:620px;margin:0 auto 44px;text-align:center;}
   .section-head h2{font-size:clamp(24px,3vw,32px);margin-bottom:10px;}
-  .section-head p{color:var(--muted);font-size:15.5px;}
+  .section-head p{color:var(--muted);font-size:15.5px;margin:0 auto;}
   .section{padding:110px 0;position:relative;}
   .bg-soft{background:var(--green-50);}
   .card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);}
