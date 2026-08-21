@@ -1,21 +1,7 @@
 const navbar=document.getElementById('navbar');
   window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>10));
 
-  /* ===== Hero Parallax Scroll ===== */
-  const heroBg = document.getElementById('heroBg');
-  if(heroBg){
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      const heroEl = document.getElementById('home');
-      if(!heroEl) return;
-      const heroH = heroEl.offsetHeight;
-      if(scrollY <= heroH){
-        // Saat scroll turun, background bergerak lebih lambat (parallax)
-        const parallaxOffset = scrollY * 0.45;
-        heroBg.style.transform = `translateY(${parallaxOffset}px)`;
-      }
-    }, { passive: true });
-  }
+
 
   const menuToggle=document.getElementById('menuToggle');
   const navLinks=document.getElementById('navLinks');
