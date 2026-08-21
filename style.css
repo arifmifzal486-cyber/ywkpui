@@ -124,7 +124,7 @@
   .hero-bg-inner{
     position:absolute;
     inset:0;
-    background-image:url('images/beranda.jpg');
+    background-image:url('images/beranda.webp');
     background-size:cover;
     background-position:center;
   }
